@@ -22,7 +22,7 @@
             margin: 0; border: 0; padding: 0;
         }
         html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
-        header{background-color: var(--preto) ;color :var(--branco) ; padding: 1%; position: fixed; width: 100%;}
+        header{background-color: var(--preto) ;color :var(--branco) ; padding: 1%; position: absolute; width: 100%;}
         body{background-color: var(--cinza);}
 
         main{background-color: var(--branco); 
@@ -35,7 +35,7 @@
         /* titles configurations
         
         */
-        h1{font-size: 2.5em; margin-top: 10%;}
+        h1{font-size: 2.5em; margin-top: 3%;}
         h2{font-size: 2em;}
         h3{font-size: 1.5em;}
         h4{font-size: 1.1;}
@@ -53,6 +53,23 @@
         p{
             padding-top: 0.5%;
             padding-bottom: 0.5%;
+            }
+
+            /* Configuracao para mobile */
+
+            @media (min-width: 360px) and (max-width: 800px) {
+                    p{
+            padding-top: 3%;
+            padding-bottom: 3%;
+            }
+            }
+
+        
+
+        /*DIVS*/
+
+        .separador{
+            margin-top: 5%;
         }
 
 
@@ -70,6 +87,9 @@
     <nav>
 
     </nav>
+    <div class="separador">
+
+    </div>
 
     <main>
         <article>
@@ -92,7 +112,9 @@
                 <img src="img/imagem1.png" alt="Analista de sistemas">
 
             </picture>
+            <div class="separador">
 
+            </div>
             <br>
             <h2>O que você vai aprender?</h2>
 <p>
